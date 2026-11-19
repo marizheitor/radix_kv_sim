@@ -58,7 +58,7 @@ Para usar outros textos como corpus: `python experiments.py --corpus pasta_com_t
 | `plots.py` | Gráficos e tabela-resumo a partir dos CSVs |
 | `tests.py` | Testes de validação |
 
-## Decisões de modelagem (revisar e citar no artigo)
+## Decisões de modelagem
 
 1. **Acerto em tokens**: tokens do prompt com KV no cache ÷ tokens totais de prompt.
 2. **O que entra no cache**: prompt + resposta, porque o próximo turno do chat contém a resposta.
@@ -71,17 +71,15 @@ Para usar outros textos como corpus: `python experiments.py --corpus pasta_com_t
 9. **Capacidade relativa**: fração do "conjunto de trabalho", o total de tokens que a árvore guardaria com memória infinita.
 10. **Corpus padrão**: docstrings da biblioteca padrão do Python (texto real em inglês).
 
-## Pontos para conferir na revisão
+## Onde está cada parte da proposta no código
 
 - `RadixCache._drop` e `_evict_tail`: como um nó vivo vira fantasma (inteiro ou só a cauda).
-- `RadixCache.insert` e `_revive`: como fantasmas do caminho voltam a ser vivos.
-- `RadixCache._pop_victim`: a ordem entre segmento não protegido e protegido.
+- `RadixCache.insert` e `_revive`: como os fantasmas do caminho voltam a ser vivos.
+- `RadixCache._pop_victim`: a ordem de remoção entre o segmento não protegido e o protegido.
 - `tests.py`: o teste com memória infinita compara com força bruta, e o teste de
   orçamento zero confere que os fantasmas sem orçamento se comportam igual ao LRU.
 
-## Execução de teste feita durante o desenvolvimento
+## Resultados do artigo
 
-A execução anexa em `resultados/` usou o tokenizador do GPT-2, porque o
-ambiente não tinha acesso ao vocabulário `cl100k_base`. Na máquina de vocês o
-código usa o `cl100k_base` automaticamente. **Rodem de novo antes de usar os
-números no artigo.**
+Os números e gráficos do artigo vêm da pasta `resultado cl100k/`: execução
+completa com o tokenizador `cl100k_base`, 3 sementes e 3.000 pedidos por carga.
