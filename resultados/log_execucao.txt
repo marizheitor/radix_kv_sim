@@ -1,0 +1,58 @@
+tokenizador: gpt2_local | corpus: 901,973 tokens
+
+[fewshot | semente 0] 3000 pedidos, 4,268,143 tokens de prompt, conjunto de trabalho 512,373 tokens, acerto com memória infinita 92.9%
+  cap    1%:  lru-folha  35.7%  lru-token  39.6%  rodizio  40.5%  fantasma-folha  41.4%  fantasma-token  44.8%
+  cap    2%:  lru-folha  54.2%  lru-token  55.8%  rodizio  57.9%  fantasma-folha  57.2%  fantasma-token  59.4%
+  cap    5%:  lru-folha  76.3%  lru-token  76.8%  rodizio  82.3%  fantasma-folha  76.5%  fantasma-token  77.1%
+  cap   10%:  lru-folha  89.1%  lru-token  89.2%  rodizio  92.8%  fantasma-folha  92.4%  fantasma-token  92.4%
+  cap   20%:  lru-folha  92.7%  lru-token  92.7%  rodizio  92.9%  fantasma-folha  92.8%  fantasma-token  92.8%
+  cap   50%:  lru-folha  92.9%  lru-token  92.9%  rodizio  92.9%  fantasma-folha  92.9%  fantasma-token  92.9%
+  cap  100%:  lru-folha  92.9%  lru-token  92.9%  rodizio  92.9%  fantasma-folha  92.9%  fantasma-token  92.9%
+
+[fewshot | semente 1] 3000 pedidos, 4,265,110 tokens de prompt, conjunto de trabalho 512,209 tokens, acerto com memória infinita 92.9%
+  cap    1%:  lru-folha  36.5%  lru-token  40.2%  rodizio  41.2%  fantasma-folha  43.1%  fantasma-token  46.8%
+  cap    2%:  lru-folha  55.2%  lru-token  56.3%  rodizio  58.1%  fantasma-folha  57.3%  fantasma-token  58.5%
+  cap    5%:  lru-folha  76.2%  lru-token  76.9%  rodizio  82.2%  fantasma-folha  76.5%  fantasma-token  77.4%
+  cap   10%:  lru-folha  88.2%  lru-token  88.4%  rodizio  92.7%  fantasma-folha  92.3%  fantasma-token  92.3%
+  cap   20%:  lru-folha  92.7%  lru-token  92.7%  rodizio  92.9%  fantasma-folha  92.7%  fantasma-token  92.7%
+  cap   50%:  lru-folha  92.9%  lru-token  92.9%  rodizio  92.9%  fantasma-folha  92.9%  fantasma-token  92.9%
+  cap  100%:  lru-folha  92.9%  lru-token  92.9%  rodizio  92.9%  fantasma-folha  92.9%  fantasma-token  92.9%
+
+[fewshot | semente 2] 3000 pedidos, 4,281,249 tokens de prompt, conjunto de trabalho 510,311 tokens, acerto com memória infinita 93.0%
+  cap    1%:  lru-folha  36.7%  lru-token  40.5%  rodizio  41.2%  fantasma-folha  43.5%  fantasma-token  46.5%
+  cap    2%:  lru-folha  54.9%  lru-token  56.5%  rodizio  58.8%  fantasma-folha  57.5%  fantasma-token  58.7%
+  cap    5%:  lru-folha  77.7%  lru-token  78.2%  rodizio  83.2%  fantasma-folha  77.9%  fantasma-token  78.4%
+  cap   10%:  lru-folha  89.0%  lru-token  89.0%  rodizio  92.8%  fantasma-folha  92.4%  fantasma-token  92.4%
+  cap   20%:  lru-folha  92.7%  lru-token  92.7%  rodizio  93.0%  fantasma-folha  92.8%  fantasma-token  92.8%
+  cap   50%:  lru-folha  93.0%  lru-token  93.0%  rodizio  93.0%  fantasma-folha  93.0%  fantasma-token  93.0%
+  cap  100%:  lru-folha  93.0%  lru-token  93.0%  rodizio  93.0%  fantasma-folha  93.0%  fantasma-token  93.0%
+
+[chat | semente 0] 3000 pedidos, 8,287,031 tokens de prompt, conjunto de trabalho 1,231,963 tokens, acerto com memória infinita 96.1%
+  cap    1%:  lru-folha  13.6%  lru-token  15.3%  rodizio  15.7%  fantasma-folha  13.8%  fantasma-token  15.6%
+  cap    2%:  lru-folha  22.8%  lru-token  24.7%  rodizio  24.8%  fantasma-folha  22.7%  fantasma-token  24.6%
+  cap    5%:  lru-folha  48.8%  lru-token  50.9%  rodizio  49.2%  fantasma-folha  49.1%  fantasma-token  50.3%
+  cap   10%:  lru-folha  81.6%  lru-token  82.5%  rodizio  74.8%  fantasma-folha  82.3%  fantasma-token  82.4%
+  cap   20%:  lru-folha  96.1%  lru-token  96.1%  rodizio  89.3%  fantasma-folha  96.1%  fantasma-token  96.1%
+  cap   50%:  lru-folha  96.1%  lru-token  96.1%  rodizio  94.8%  fantasma-folha  96.1%  fantasma-token  96.1%
+  cap  100%:  lru-folha  96.1%  lru-token  96.1%  rodizio  96.1%  fantasma-folha  96.1%  fantasma-token  96.1%
+
+[chat | semente 1] 3000 pedidos, 7,860,992 tokens de prompt, conjunto de trabalho 1,226,653 tokens, acerto com memória infinita 95.8%
+  cap    1%:  lru-folha  16.3%  lru-token  17.6%  rodizio  17.5%  fantasma-folha  16.0%  fantasma-token  18.0%
+  cap    2%:  lru-folha  25.9%  lru-token  27.8%  rodizio  26.4%  fantasma-folha  26.2%  fantasma-token  27.9%
+  cap    5%:  lru-folha  51.9%  lru-token  53.8%  rodizio  50.7%  fantasma-folha  52.8%  fantasma-token  54.0%
+  cap   10%:  lru-folha  86.1%  lru-token  86.5%  rodizio  75.2%  fantasma-folha  85.9%  fantasma-token  86.0%
+  cap   20%:  lru-folha  95.8%  lru-token  95.8%  rodizio  89.0%  fantasma-folha  95.8%  fantasma-token  95.8%
+  cap   50%:  lru-folha  95.8%  lru-token  95.8%  rodizio  94.5%  fantasma-folha  95.8%  fantasma-token  95.8%
+  cap  100%:  lru-folha  95.8%  lru-token  95.8%  rodizio  95.8%  fantasma-folha  95.8%  fantasma-token  95.8%
+
+[chat | semente 2] 3000 pedidos, 8,331,194 tokens de prompt, conjunto de trabalho 1,231,636 tokens, acerto com memória infinita 96.1%
+  cap    1%:  lru-folha  14.6%  lru-token  17.0%  rodizio  17.1%  fantasma-folha  14.9%  fantasma-token  17.1%
+  cap    2%:  lru-folha  24.9%  lru-token  27.4%  rodizio  26.7%  fantasma-folha  24.3%  fantasma-token  26.8%
+  cap    5%:  lru-folha  50.5%  lru-token  52.3%  rodizio  51.1%  fantasma-folha  51.3%  fantasma-token  52.1%
+  cap   10%:  lru-folha  84.1%  lru-token  84.7%  rodizio  75.4%  fantasma-folha  84.1%  fantasma-token  84.1%
+  cap   20%:  lru-folha  96.1%  lru-token  96.1%  rodizio  89.1%  fantasma-folha  96.1%  fantasma-token  96.1%
+  cap   50%:  lru-folha  96.1%  lru-token  96.1%  rodizio  94.7%  fantasma-folha  96.1%  fantasma-token  96.1%
+  cap  100%:  lru-folha  96.1%  lru-token  96.1%  rodizio  96.1%  fantasma-folha  96.1%  fantasma-token  96.1%
+
+CSVs salvos em resultados/
+Gráficos salvos em resultados/
